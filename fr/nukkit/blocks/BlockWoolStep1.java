@@ -24,15 +24,29 @@ public class BlockWoolStep1 extends BlockHalfSlab
      */
     public int getBlockTextureFromSideAndMetadata(int par1, int par2)
     {
-    	if (par2 == 0)
-	    {
-	        return this.blockIndexInTexture;
-	    }
-	    else
-	    {
-	        par2 = ~(par2 & 15);
-	        return 113 + ((par2 & 8) >> 3) + (par2 & 7) * 16;
-	    }
+        int metadata = par2 & 7;
+        
+        switch(metadata)
+        {
+	    	case 0:
+	    		return 64;
+	    	case 1:
+	    		return 210;
+	    	case 2:
+	    		return 194;
+	    	case 3:
+	    		return 172;
+	    	case 4:
+	    		return 156;
+	    	case 5:
+	    		return 140;
+	    	case 6:
+	    		return 124;
+	    	case 7:
+	    		return 108;
+	    	default:
+	    		return this.blockIndexInTexture;
+        }
     }
 
     /**

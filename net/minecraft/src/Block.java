@@ -232,21 +232,23 @@ public class Block
     public static final Block stairsWoolBlack = (new BlockStairs(175, Block.cloth, 15)).setBlockName("stairsWoolBlack").setRequiresSelfNotify();
     
     // Wool steps - We need to create 4 blocks
-    public static final BlockHalfSlab woolDoubleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(176, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
-    public static final BlockHalfSlab woolSingleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(177, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
-    public static final BlockHalfSlab woolDoubleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(178, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
-    public static final BlockHalfSlab woolSingleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(17, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
+    public static final BlockHalfSlab woolDoubleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(176, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
+    public static final BlockHalfSlab woolSingleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(177, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
+    public static final BlockHalfSlab woolDoubleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(178, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
+    public static final BlockHalfSlab woolSingleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(179, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
     
     static
     {
-    	Item.itemsList[woolSingleSlab1.blockID] = (new ItemSlab(woolSingleSlab1.blockID - 256, woolSingleSlab1, woolDoubleSlab1, false)).setItemName("stoneSlab");
-        Item.itemsList[woolDoubleSlab1.blockID] = (new ItemSlab(woolDoubleSlab1.blockID - 256, woolSingleSlab1, woolDoubleSlab1, true)).setItemName("stoneSlab");
+    	Item.itemsList[woolSingleSlab1.blockID] = (new ItemSlab(woolSingleSlab1.blockID - 256, woolSingleSlab1, woolDoubleSlab1, false)).setItemName("woolSlab");
+        Item.itemsList[woolDoubleSlab1.blockID] = (new ItemSlab(woolDoubleSlab1.blockID - 256, woolSingleSlab1, woolDoubleSlab1, true)).setItemName("woolSlab");
+        Item.itemsList[woolSingleSlab2.blockID] = (new ItemSlab(woolSingleSlab2.blockID - 256, woolSingleSlab2, woolDoubleSlab2, false)).setItemName("woolSlab");
+        Item.itemsList[woolDoubleSlab2.blockID] = (new ItemSlab(woolDoubleSlab2.blockID - 256, woolSingleSlab2, woolDoubleSlab2, true)).setItemName("woolSlab");
     }
     
     // Furnitures
-    public static final Block chair = (new BlockChair(178, 4, Material.wood)).setBlockName("chair").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block bank = (new BlockBank(179, 4, Material.wood)).setBlockName("bank").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block table = (new BlockTable(180, 4, Material.wood)).setBlockName("table").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block chair = (new BlockChair(180, 4, Material.wood)).setBlockName("chair").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block bank = (new BlockBank(181, 4, Material.wood)).setBlockName("bank").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block table = (new BlockTable(182, 4, Material.wood)).setBlockName("table").setCreativeTab(CreativeTabs.tabDecorations);
     
     	// III. Fences
     /*public static final Block fenceWood = (new BlockFence(179, 20)).setCreativeTab(CreativeTabs.tabDecorations);
