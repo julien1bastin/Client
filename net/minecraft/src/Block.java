@@ -7,6 +7,8 @@ import fr.nukkit.blocks.BlockBank;
 import fr.nukkit.blocks.BlockChair;
 import fr.nukkit.blocks.BlockMaltCrops;
 import fr.nukkit.blocks.BlockTable;
+import fr.nukkit.blocks.BlockWoolStep1;
+import fr.nukkit.blocks.BlockWoolStep2;
 
 public class Block
 {
@@ -210,7 +212,8 @@ public class Block
     public static final Block anvil = (new BlockAnvil(145)).setHardness(5.0F).setStepSound(soundAnvilFootstep).setResistance(2000.0F).setBlockName("anvil").setRequiresSelfNotify();
 
     // Nukkit start - adding new blocks
-    	// I. Wool stairs
+    
+    // Wool stairs
     public static final Block stairsWoolWhite = (new BlockStairs(160, Block.cloth, 0)).setBlockName("stairsWoolWhite").setRequiresSelfNotify();
     public static final Block stairsWoolOrange = (new BlockStairs(161, Block.cloth, 1)).setBlockName("stairsWoolOrange").setRequiresSelfNotify();
     public static final Block stairsWoolMagenta = (new BlockStairs(162, Block.cloth, 2)).setBlockName("stairsWoolMagenta").setRequiresSelfNotify();
@@ -228,21 +231,19 @@ public class Block
     public static final Block stairsWoolRed = (new BlockStairs(174, Block.cloth, 14)).setBlockName("stairsWoolRed").setRequiresSelfNotify();
     public static final Block stairsWoolBlack = (new BlockStairs(175, Block.cloth, 15)).setBlockName("stairsWoolBlack").setRequiresSelfNotify();
     
-    public static final BlockHalfSlab woolDoubleSlab1 = (BlockHalfSlab)(new BlockStep(176, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
-    public static final BlockHalfSlab woolSingleSlab1 = (BlockHalfSlab)(new BlockStep(177, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
-    
-    public static final BlockHalfSlab woolDoubleSlab2 = (BlockHalfSlab)(new BlockStep(178, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
-    public static final BlockHalfSlab woolSingleSlab2 = (BlockHalfSlab)(new BlockStep(179, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
-    
-    // , "gray", "pink", "lime", "yellow", "lightBlue", "magenta", "orange", "white"
+    // Wool steps - We need to create 4 blocks
+    public static final BlockHalfSlab woolDoubleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(176, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
+    public static final BlockHalfSlab woolSingleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(177, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
+    public static final BlockHalfSlab woolDoubleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(178, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
+    public static final BlockHalfSlab woolSingleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(17, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundStoneFootstep).setBlockName("stoneSlab");
     
     static
     {
-    	Item.itemsList[woolSingleSlab.blockID] = (new ItemSlab(woolSingleSlab.blockID - 256, woolSingleSlab, woolDoubleSlab, false)).setItemName("stoneSlab");
-        Item.itemsList[woolDoubleSlab.blockID] = (new ItemSlab(woolDoubleSlab.blockID - 256, woolSingleSlab, woolDoubleSlab, true)).setItemName("stoneSlab");
+    	Item.itemsList[woolSingleSlab1.blockID] = (new ItemSlab(woolSingleSlab1.blockID - 256, woolSingleSlab1, woolDoubleSlab1, false)).setItemName("stoneSlab");
+        Item.itemsList[woolDoubleSlab1.blockID] = (new ItemSlab(woolDoubleSlab1.blockID - 256, woolSingleSlab1, woolDoubleSlab1, true)).setItemName("stoneSlab");
     }
     
-    	// II. Furnitures
+    // Furnitures
     public static final Block chair = (new BlockChair(178, 4, Material.wood)).setBlockName("chair").setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block bank = (new BlockBank(179, 4, Material.wood)).setBlockName("bank").setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block table = (new BlockTable(180, 4, Material.wood)).setBlockName("table").setCreativeTab(CreativeTabs.tabDecorations);
