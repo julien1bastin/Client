@@ -213,29 +213,27 @@ public class Block
 
     // Nukkit start - adding new blocks
     
-    // Wool stairs
-    public static final Block stairsWoolWhite = (new BlockStairs(160, Block.cloth, 0)).setBlockName("stairsWoolWhite").setRequiresSelfNotify();
-    public static final Block stairsWoolOrange = (new BlockStairs(161, Block.cloth, 1)).setBlockName("stairsWoolOrange").setRequiresSelfNotify();
-    public static final Block stairsWoolMagenta = (new BlockStairs(162, Block.cloth, 2)).setBlockName("stairsWoolMagenta").setRequiresSelfNotify();
-    public static final Block stairsWoolLightBlue = (new BlockStairs(163, Block.cloth, 3)).setBlockName("stairsWoolLightBlue").setRequiresSelfNotify();
-    public static final Block stairsWoolYellow = (new BlockStairs(164, Block.cloth, 4)).setBlockName("stairsWoolYellow").setRequiresSelfNotify();
-    public static final Block stairsWoolLime = (new BlockStairs(165, Block.cloth, 5)).setBlockName("stairsWoolLime").setRequiresSelfNotify();
-    public static final Block stairsWoolRose = (new BlockStairs(166, Block.cloth, 6)).setBlockName("stairsWoolRose").setRequiresSelfNotify();
-    public static final Block stairsWoolGray = (new BlockStairs(167, Block.cloth, 7)).setBlockName("stairsWoolGray").setRequiresSelfNotify();
-    public static final Block stairsWoolLightGray = (new BlockStairs(168, Block.cloth, 8)).setBlockName("stairsWoolLightGray").setRequiresSelfNotify();
-    public static final Block stairsWoolCyan = (new BlockStairs(169, Block.cloth, 9)).setBlockName("stairsWoolCyan").setRequiresSelfNotify();
-    public static final Block stairsWoolPurple = (new BlockStairs(170, Block.cloth, 10)).setBlockName("stairsWoolPurple").setRequiresSelfNotify();
-    public static final Block stairsWoolBlue = (new BlockStairs(171, Block.cloth, 11)).setBlockName("stairsWoolBlue").setRequiresSelfNotify();
-    public static final Block stairsWoolBrown = (new BlockStairs(172, Block.cloth, 12)).setBlockName("stairsWoolBrown").setRequiresSelfNotify();
-    public static final Block stairsWoolGreen = (new BlockStairs(173, Block.cloth, 13)).setBlockName("stairsWoolGreen").setRequiresSelfNotify();
-    public static final Block stairsWoolRed = (new BlockStairs(174, Block.cloth, 14)).setBlockName("stairsWoolRed").setRequiresSelfNotify();
-    public static final Block stairsWoolBlack = (new BlockStairs(175, Block.cloth, 15)).setBlockName("stairsWoolBlack").setRequiresSelfNotify();
-    
-    // Wool steps - We need to create 4 blocks
-    public static final BlockHalfSlab woolDoubleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(176, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
-    public static final BlockHalfSlab woolSingleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(177, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
-    public static final BlockHalfSlab woolDoubleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(178, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
-    public static final BlockHalfSlab woolSingleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(179, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
+    public static final Block stairsDirt = (new BlockStairs(170, Block.dirt, 0)).setBlockName("stairsDirt");
+    public static final Block stairsWoolWhite = (new BlockStairs(171, Block.cloth, 0)).setBlockName("stairsWoolWhite").setRequiresSelfNotify();
+    public static final Block stairsWoolOrange = (new BlockStairs(172, Block.cloth, 1)).setBlockName("stairsWoolOrange").setRequiresSelfNotify();
+    public static final Block stairsWoolMagenta = (new BlockStairs(173, Block.cloth, 2)).setBlockName("stairsWoolMagenta").setRequiresSelfNotify();
+    public static final Block stairsWoolLightBlue = (new BlockStairs(174, Block.cloth, 3)).setBlockName("stairsWoolLightBlue").setRequiresSelfNotify();
+    public static final Block stairsWoolYellow = (new BlockStairs(175, Block.cloth, 4)).setBlockName("stairsWoolYellow").setRequiresSelfNotify();
+    public static final Block stairsWoolLime = (new BlockStairs(176, Block.cloth, 5)).setBlockName("stairsWoolLime").setRequiresSelfNotify();
+    public static final Block stairsWoolRose = (new BlockStairs(177, Block.cloth, 6)).setBlockName("stairsWoolRose").setRequiresSelfNotify();
+    public static final Block stairsWoolGray = (new BlockStairs(178, Block.cloth, 7)).setBlockName("stairsWoolGray").setRequiresSelfNotify();
+    public static final Block stairsWoolLightGray = (new BlockStairs(179, Block.cloth, 8)).setBlockName("stairsWoolLightGray").setRequiresSelfNotify();
+    public static final Block stairsWoolCyan = (new BlockStairs(180, Block.cloth, 9)).setBlockName("stairsWoolCyan").setRequiresSelfNotify();
+    public static final Block stairsWoolPurple = (new BlockStairs(181, Block.cloth, 10)).setBlockName("stairsWoolPurple").setRequiresSelfNotify();
+    public static final Block stairsWoolBlue = (new BlockStairs(182, Block.cloth, 11)).setBlockName("stairsWoolBlue").setRequiresSelfNotify();
+    public static final Block stairsWoolBrown = (new BlockStairs(183, Block.cloth, 12)).setBlockName("stairsWoolBrown").setRequiresSelfNotify();
+    public static final Block stairsWoolGreen = (new BlockStairs(184, Block.cloth, 13)).setBlockName("stairsWoolGreen").setRequiresSelfNotify();
+    public static final Block stairsWoolRed = (new BlockStairs(185, Block.cloth, 14)).setBlockName("stairsWoolRed").setRequiresSelfNotify();
+    public static final Block stairsWoolBlack = (new BlockStairs(186, Block.cloth, 15)).setBlockName("stairsWoolBlack").setRequiresSelfNotify();
+    public static final BlockHalfSlab woolDoubleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(187, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
+    public static final BlockHalfSlab woolSingleSlab1 = (BlockHalfSlab)(new BlockWoolStep1(188, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
+    public static final BlockHalfSlab woolDoubleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(189, true)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
+    public static final BlockHalfSlab woolSingleSlab2 = (BlockHalfSlab)(new BlockWoolStep2(190, false)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundClothFootstep).setBlockName("woolSlab");
     
     static
     {
@@ -245,17 +243,13 @@ public class Block
         Item.itemsList[woolDoubleSlab2.blockID] = (new ItemSlab(woolDoubleSlab2.blockID - 256, woolSingleSlab2, woolDoubleSlab2, true)).setItemName("woolSlab");
     }
     
-    // Furnitures
-    public static final Block chair = (new BlockChair(180, 4, Material.wood)).setBlockName("chair").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block bank = (new BlockBank(181, 4, Material.wood)).setBlockName("bank").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block table = (new BlockTable(182, 4, Material.wood)).setBlockName("table").setCreativeTab(CreativeTabs.tabDecorations);
-    
-    	// III. Fences
-    /*public static final Block fenceWood = (new BlockFence(179, 20)).setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block fenceSteel = (new BlockFence(180, 22)).setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block maltCrops = (new BlockMaltCrops(181, 0)).setBlockName("maltCrops");
-    public static final Block stairsDirt = (new BlockStairs(182, Block.dirt, 0)).setBlockName("stairsDirt");
-    public static final Block lantern = (new Block(183, 0, Material.glass)).setBlockName("lantern").setLightValue(1.0F).setCreativeTab(CreativeTabs.tabDecorations);*/
+    public static final Block chair = (new BlockChair(191, 4, Material.wood)).setBlockName("chair").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block bank = (new BlockBank(192, 4, Material.wood)).setBlockName("bank").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block table = (new BlockTable(193, 4, Material.wood)).setBlockName("table").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block fenceWood = (new BlockFence(194, 20)).setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block fenceSteel = (new BlockFence(195, 22)).setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block lantern = (new Block(196, 236, Material.glass)).setBlockName("lantern").setLightValue(1.0F).setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block maltCrops = (new BlockMaltCrops(197, 217)).setBlockName("maltCrops");
     
     // Nukkit end
     
