@@ -131,9 +131,7 @@ public class BiomeDecorator
     public boolean generateLakes;
 
     // Nukkit start - adding generator
-    
-    public WorldGenMinable rubyGen = new WorldGenMinable(Block.oreDiamond.blockID, 7);
-    
+    public WorldGenMinable rubyGen = new WorldGenMinable(Block.oreRuby.blockID, 7);
     // Nukkit end
     
     public BiomeDecorator(BiomeGenBase par1BiomeGenBase)
