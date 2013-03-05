@@ -5,7 +5,7 @@ import java.util.Random;
 
 import fr.nukkit.blocks.BlockBank;
 import fr.nukkit.blocks.BlockChair;
-import fr.nukkit.blocks.BlockMaltCrops;
+import fr.nukkit.blocks.BlockCropsMalt;
 import fr.nukkit.blocks.BlockTable;
 import fr.nukkit.blocks.BlockWoolStep1;
 import fr.nukkit.blocks.BlockWoolStep2;
@@ -249,7 +249,7 @@ public class Block
     public static final Block fenceWood = (new BlockFence(194, 20)).setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block fenceSteel = (new BlockFence(195, 22)).setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block lantern = (new Block(196, 236, Material.glass)).setBlockName("lantern").setLightValue(1.0F).setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block cropsMalt = (new BlockMaltCrops(197, 217)).setBlockName("maltCrops");
+    public static final Block cropsMalt = (new BlockCropsMalt(197, 217)).setBlockName("cropsMalt");
     
     // Nukkit end
     

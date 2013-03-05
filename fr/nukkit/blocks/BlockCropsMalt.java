@@ -9,9 +9,9 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.World;
 
-public class BlockMaltCrops extends BlockFlower
+public class BlockCropsMalt extends BlockFlower
 {
-    public BlockMaltCrops(int par1, int par2)
+    public BlockCropsMalt(int par1, int par2)
     {
         super(par1, par2);
         this.blockIndexInTexture = par2;
