@@ -1,6 +1,7 @@
 package net.minecraft.src;
 
 import java.util.List;
+import fr.nukkit.blocks.BlockCropsMalt;
 
 public class ItemDye extends Item
 {
@@ -98,6 +99,22 @@ public class ItemDye extends Item
                     if (!par3World.isRemote)
                     {
                         ((BlockCrops)Block.blocksList[var11]).fertilize(par3World, par4, par5, par6);
+                        --par1ItemStack.stackSize;
+                    }
+
+                    return true;
+                }
+                
+                if (var11 > 0 && Block.blocksList[var11] instanceof BlockCropsMalt) // Nukkit - adding condition for malt crops
+                {
+                    if (par3World.getBlockMetadata(par4, par5, par6) == 7)
+                    {
+                        return false;
+                    }
+
+                    if (!par3World.isRemote)
+                    {
+                        ((BlockCropsMalt)Block.blocksList[var11]).fertilize(par3World, par4, par5, par6);
                         --par1ItemStack.stackSize;
                     }
 
