@@ -8,6 +8,8 @@ import java.util.IllegalFormatException;
 import java.util.Properties;
 import java.util.TreeMap;
 
+import fr.nukkit.lang.Language;
+
 public class StringTranslate
 {
     /** Is the private singleton instance of StringTranslate. */
@@ -87,6 +89,11 @@ public class StringTranslate
                 }
             }
         }
+        
+        // Nukkit start - add external langage file
+    	Language language = Language.getInstance();
+        language.loadLanguage(par1Properties, par2Str);
+        // Nukkit end
     }
 
     public void setLanguage(String par1Str)

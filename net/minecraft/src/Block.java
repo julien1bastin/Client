@@ -220,7 +220,7 @@ public class Block
     public static final Block stairsWoolLightBlue = (new BlockStairs(174, Block.cloth, 3)).setBlockName("stairsWoolLightBlue").setRequiresSelfNotify();
     public static final Block stairsWoolYellow = (new BlockStairs(175, Block.cloth, 4)).setBlockName("stairsWoolYellow").setRequiresSelfNotify();
     public static final Block stairsWoolLime = (new BlockStairs(176, Block.cloth, 5)).setBlockName("stairsWoolLime").setRequiresSelfNotify();
-    public static final Block stairsWoolRose = (new BlockStairs(177, Block.cloth, 6)).setBlockName("stairsWoolRose").setRequiresSelfNotify();
+    public static final Block stairsWoolPink = (new BlockStairs(177, Block.cloth, 6)).setBlockName("stairsWoolPink").setRequiresSelfNotify();
     public static final Block stairsWoolGray = (new BlockStairs(178, Block.cloth, 7)).setBlockName("stairsWoolGray").setRequiresSelfNotify();
     public static final Block stairsWoolLightGray = (new BlockStairs(179, Block.cloth, 8)).setBlockName("stairsWoolLightGray").setRequiresSelfNotify();
     public static final Block stairsWoolCyan = (new BlockStairs(180, Block.cloth, 9)).setBlockName("stairsWoolCyan").setRequiresSelfNotify();
@@ -246,8 +246,8 @@ public class Block
     public static final Block chair = (new BlockChair(191, 4, Material.wood)).setBlockName("chair").setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block bank = (new BlockBank(192, 4, Material.wood)).setBlockName("bank").setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block table = (new BlockTable(193, 4, Material.wood)).setBlockName("table").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block fenceWood = (new BlockFence(194, 20)).setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block fenceSteel = (new BlockFence(195, 22)).setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block fenceWood = (new BlockFence(194, 20)).setBlockName("fenceWood").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block fenceSteel = (new BlockFence(195, 22)).setBlockName("fenceSteel").setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block lantern = (new Block(196, 236, Material.glass)).setBlockName("lantern").setLightValue(1.0F).setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block cropsMalt = (new BlockCropsMalt(197, 217)).setBlockName("cropsMalt");
     

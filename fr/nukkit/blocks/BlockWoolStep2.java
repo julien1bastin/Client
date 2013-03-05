@@ -11,7 +11,7 @@ import net.minecraft.src.Material;
 
 public class BlockWoolStep2 extends BlockHalfSlab
 {
-    public static final String[] woolType = new String[] { "silver", "cyan", "purple", "blue", "brown", "green", "red", "black" };
+    public static final String[] woolType = new String[] { "lightGray", "cyan", "purple", "blue", "brown", "green", "red", "black" };
 
     public BlockWoolStep2(int par1, boolean par2)
     {

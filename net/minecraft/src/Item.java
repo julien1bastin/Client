@@ -175,7 +175,7 @@ public class Item
     
     // Nukkit start - adding new items
     
-    public static Item seedsMalt = (new ItemSeeds(700, 197, Block.tilledField.blockID)).setIconCoord(7, 12).setItemName("seeds");
+    public static Item seedsMalt = (new ItemSeeds(700, 197, Block.tilledField.blockID)).setIconCoord(7, 12).setItemName("seedsMalt");
     public static Item malt = (new Item(701)).setIconCoord(8, 12).setItemName("malt").setCreativeTab(CreativeTabs.tabMaterials);
     public static Item ingotObsidian = (new Item(1019)).setIconCoord(2, 9).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
     public static Item ruby = (new Item(1019)).setIconCoord(10, 10).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
