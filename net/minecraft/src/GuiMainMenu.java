@@ -489,8 +489,11 @@ public class GuiMainMenu extends GuiScreen
         GL11.glScalef(var8, var8, var8);
         this.drawCenteredString(this.fontRenderer, this.splashText, 0, -8, 16776960);
         GL11.glPopMatrix();
-        String var9 = "Minecraft 1.4.7";
-
+        // Nukkit start - edit GuiMainMenu
+        String var9 = "\u00a7cNukkit 2.0R0.1\u00a7r based on Minecraft 1.4.7";
+        this.drawString(this.fontRenderer, "Nukkit : http://nukkit-project.fr/", 2, 2, 16777215); // Nukkit - Adding nukkit label
+        // Nukkit end
+        
         if (this.mc.isDemo())
         {
             var9 = var9 + " Demo";
