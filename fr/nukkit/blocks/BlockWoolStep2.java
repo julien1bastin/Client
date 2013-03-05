@@ -58,13 +58,13 @@ public class BlockWoolStep2 extends BlockHalfSlab
     @Override
     public int idDropped(int par1, Random par2Random, int par3)
     {
-        return Block.woodSingleSlab.blockID;
+        return Block.woolSingleSlab2.blockID;
     }
     
     @Override
     protected ItemStack createStackedBlock(int par1)
     {
-        return new ItemStack(Block.woodSingleSlab.blockID, 2, par1 & 7);
+        return new ItemStack(Block.woolSingleSlab2.blockID, 2, par1 & 7);
     }
     
     @Override
