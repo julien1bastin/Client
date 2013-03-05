@@ -130,6 +130,12 @@ public class BiomeDecorator
     /** True if decorator should generate surface lava & water */
     public boolean generateLakes;
 
+    // Nukkit start - adding generator
+    
+    public WorldGenMinable rubyGen = new WorldGenMinable(Block.oreDiamond.blockID, 7);
+    
+    // Nukkit end
+    
     public BiomeDecorator(BiomeGenBase par1BiomeGenBase)
     {
         this.sandGen = new WorldGenSand(7, Block.sand.blockID);
@@ -411,6 +417,10 @@ public class BiomeDecorator
      */
     protected void generateOres()
     {
+    	// Nukkit start - adding global generators
+        this.genStandardOre1(1, this.rubyGen, 0, 16);
+        // Nukkit end
+        
         this.genStandardOre1(20, this.dirtGen, 0, 128);
         this.genStandardOre1(10, this.gravelGen, 0, 128);
         this.genStandardOre1(20, this.coalGen, 0, 128);
