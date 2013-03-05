@@ -105,7 +105,8 @@ public class ItemDye extends Item
                     return true;
                 }
                 
-                if (var11 > 0 && Block.blocksList[var11] instanceof BlockCropsMalt) // Nukkit - adding condition for malt crops
+                // Nukkit start - adding condition for malt crops
+                if (var11 > 0 && Block.blocksList[var11] instanceof BlockCropsMalt)
                 {
                     if (par3World.getBlockMetadata(par4, par5, par6) == 7)
                     {
@@ -120,6 +121,7 @@ public class ItemDye extends Item
 
                     return true;
                 }
+                // Nukkit end
 
                 if (var11 == Block.cocoaPlant.blockID)
                 {
