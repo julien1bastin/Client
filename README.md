@@ -23,14 +23,11 @@ Changelog
     * + Escaliers en laine
     * + Dalles en laine
     * + Escalier en terre
-    * + Dalle en terre
-    * + Bloc de paille
     * + Meubles : chaise, table, banc
     * + Barrière en fer
     * + Barrière en bois
     * + Lanterne
-    * + Bière et houblon
+    * + Houblon
     * + Minerai et bloc de rubis
-    * + Minerai et bloc de saphir
-    * + Outils en obsidienne, émeraude, rubis et saphir
-    * + Armures en obsidienne, émeraude, rubis et saphir
+    * + Outils en obsidienne, émeraude, et rubis
+    * + Armures en obsidienne, émeraude, et rubis
