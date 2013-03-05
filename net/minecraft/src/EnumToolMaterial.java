@@ -5,8 +5,16 @@ public enum EnumToolMaterial
     WOOD(0, 59, 2.0F, 0, 15),
     STONE(1, 131, 4.0F, 1, 5),
     IRON(2, 250, 6.0F, 2, 14),
-    EMERALD(3, 1561, 8.0F, 3, 10),
-    GOLD(0, 32, 12.0F, 0, 22);
+    DIAMOND(3, 1561, 8.0F, 3, 10), // Nukkit - rename EMERALD to DIAMOND
+    GOLD(0, 32, 12.0F, 0, 22),
+    
+    // Nukkit start - new tool material
+	OBSIDIAN(3, 780, 8.0F, 3, 22),
+	EMERALD(3, 3122, 6.0F, 3, 10),
+	RUBY(3, 780, 8.0F, 9, 10);
+    // Nukkit end
+    
+    
 
     /**
      * The level of material this tool can harvest (3 = DIAMOND, 2 = IRON, 1 = STONE, 0 = IRON/GOLD)
@@ -84,6 +92,6 @@ public enum EnumToolMaterial
      */
     public int getToolCraftingMaterial()
     {
-        return this == WOOD ? Block.planks.blockID : (this == STONE ? Block.cobblestone.blockID : (this == GOLD ? Item.ingotGold.itemID : (this == IRON ? Item.ingotIron.itemID : (this == EMERALD ? Item.diamond.itemID : 0))));
+        return this == WOOD ? Block.planks.blockID : (this == STONE ? Block.cobblestone.blockID : (this == GOLD ? Item.ingotGold.itemID : (this == IRON ? Item.ingotIron.itemID : (this == DIAMOND ? Item.diamond.itemID : 0))));
     }
 }

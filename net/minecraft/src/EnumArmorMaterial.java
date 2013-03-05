@@ -6,7 +6,13 @@ public enum EnumArmorMaterial
     CHAIN(15, new int[]{2, 5, 4, 1}, 12),
     IRON(15, new int[]{2, 6, 5, 2}, 9),
     GOLD(7, new int[]{2, 5, 3, 1}, 25),
-    DIAMOND(33, new int[]{3, 8, 6, 3}, 10);
+    DIAMOND(33, new int[]{3, 8, 6, 3}, 10),
+    
+    // Nukkit start - new armor materials
+    OBSIDIAN(15, new int[]{3, 8, 6, 3}, 10),
+    EMERALD(66, new int[]{1, 7, 3, 1}, 10),
+    RUBY(33, new int[]{1, 7, 3, 1}, 50);
+    // Nukkit end
 
     /**
      * Holds the maximum damage factor (each piece multiply this by it's own value) of the material, this is the item
