@@ -251,6 +251,8 @@ public class Block
     public static final Block lantern = (new Block(196, 236, Material.glass)).setBlockName("lantern").setLightValue(1.0F).setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block cropsMalt = (new BlockCropsMalt(197, 217)).setBlockName("cropsMalt");
     
+    public static final Block oreRuby = (new fr.nukkit.blocks.BlockOre(198, 187)).setHardness(3.0F).setResistance(5.0F).setBlockName("oreRuby");
+    
     // Nukkit end
     
     
