@@ -9,6 +9,12 @@ import net.minecraft.src.RenderBlocks;
 import net.minecraft.src.Tessellator;
 import net.minecraft.src.World;
 
+/**
+ * Nukkit render block base class.
+ * @author Mathieu Bour (Dierka)
+ * @version 1.0
+ * @since 2.0R0.1
+ */
 public abstract class RenderAbstract
 {
 	protected RenderBlocks renderblocks; // L'objet RenderBlocks
@@ -19,11 +25,12 @@ public abstract class RenderAbstract
 	}
 	
 	/**
-	 * Rendu du bloc dans le jeu
+	 * Render block in-game
 	 */
 	public abstract boolean render(Block par1Block, int par2, int par3, int par4);
+	
 	/**
-	 * Rendu du bloc dans la main
+	 * Render block in the hand
 	 */
 	public abstract void render(Tessellator par1Tessellator, Block par2Block);
 }

@@ -9,6 +9,12 @@ import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.World;
 
+/**
+ * Nukkit malt crops block.
+ * @author Mathieu Bour (Dierka)
+ * @version 1.0
+ * @since 2.0R0.1
+ */
 public class BlockCropsMalt extends BlockFlower
 {
     public BlockCropsMalt(int par1, int par2)
@@ -25,30 +31,14 @@ public class BlockCropsMalt extends BlockFlower
         this.setRequiresSelfNotify();
     }
     
-    protected boolean canThisPlantGrowOnThisBlockID(int par1)
+    protected int getSeedItem()
     {
-        return par1 == Block.tilledField.blockID;
+        return Item.seedsMalt.itemID;
     }
     
-    public void updateTick(World par1World, int par2, int par3, int par4, Random par5Random)
+    protected int getCropItem()
     {
-        super.updateTick(par1World, par2, par3, par4, par5Random);
-
-        if (par1World.getBlockLightValue(par2, par3 + 1, par4) >= 9)
-        {
-            int var6 = par1World.getBlockMetadata(par2, par3, par4);
-
-            if (var6 < 7)
-            {
-                float var7 = this.getGrowthRate(par1World, par2, par3, par4);
-
-                if (par5Random.nextInt((int)(25.0F / var7) + 1) == 0)
-                {
-                    ++var6;
-                    par1World.setBlockMetadataWithNotify(par2, par3, par4, var6);
-                }
-            }
-        }
+        return Item.malt.itemID;
     }
     
     public void fertilize(World par1World, int par2, int par3, int par4)
@@ -105,6 +95,36 @@ public class BlockCropsMalt extends BlockFlower
         return var5;
     }
     
+    
+    @Override
+    protected boolean canThisPlantGrowOnThisBlockID(int par1)
+    {
+        return par1 == Block.tilledField.blockID;
+    }
+    
+    @Override
+    public void updateTick(World par1World, int par2, int par3, int par4, Random par5Random)
+    {
+        super.updateTick(par1World, par2, par3, par4, par5Random);
+
+        if (par1World.getBlockLightValue(par2, par3 + 1, par4) >= 9)
+        {
+            int var6 = par1World.getBlockMetadata(par2, par3, par4);
+
+            if (var6 < 7)
+            {
+                float var7 = this.getGrowthRate(par1World, par2, par3, par4);
+
+                if (par5Random.nextInt((int)(25.0F / var7) + 1) == 0)
+                {
+                    ++var6;
+                    par1World.setBlockMetadataWithNotify(par2, par3, par4, var6);
+                }
+            }
+        }
+    }
+    
+    @Override
     public int getBlockTextureFromSideAndMetadata(int par1, int par2)
     {
         if (par2 >= 0 && par2 < 5)
@@ -121,21 +141,13 @@ public class BlockCropsMalt extends BlockFlower
         }
     }
     
+    @Override
     public int getRenderType()
     {
         return 6;
     }
     
-    protected int getSeedItem()
-    {
-        return Item.seedsMalt.itemID;
-    }
-    
-    protected int getCropItem()
-    {
-        return Item.malt.itemID;
-    }
-    
+    @Override
     public void dropBlockAsItemWithChance(World par1World, int par2, int par3, int par4, int par5, float par6, int par7)
     {
         super.dropBlockAsItemWithChance(par1World, par2, par3, par4, par5, par6, 0);
@@ -157,16 +169,19 @@ public class BlockCropsMalt extends BlockFlower
         }
     }
     
+    @Override
     public int idDropped(int par1, Random par2Random, int par3)
     {
         return par1 == 7 ? this.getCropItem() : this.getSeedItem();
     }
     
+    @Override
     public int quantityDropped(Random par1Random)
     {
         return 1;
     }
     
+    @Override
     public int idPicked(World par1World, int par2, int par3, int par4)
     {
         return this.getSeedItem();

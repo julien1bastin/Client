@@ -9,6 +9,12 @@ import net.minecraft.src.Material;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.World;
 
+/**
+ * Nukkit chair block class.
+ * @author Mathieu Bour (Dierka)
+ * @version 1.0
+ * @since 2.0R0.1
+ */
 public class BlockChair extends BlockFurnitureAbstract
 {
 	public BlockChair(int id, int textureIndex, Material material)
@@ -17,17 +23,20 @@ public class BlockChair extends BlockFurnitureAbstract
         this.setBlockBounds(0.2F, 0.0F, 0.2F, 0.8F, 1.0F, 0.8F);
 	}
 	
+	@Override
 	public int getRenderType()
 	{
 		return 70;
 	}
 	
+	@Override
     public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving)
     {
         int var6 = MathHelper.floor_double((double)(par5EntityLiving.rotationYaw * 4.0F / 360.0F) + 2.5D) & 3;
         par1World.setBlockMetadataWithNotify(par2, par3, par4, var6);
     }
     
+	@Override
     public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, List par6List, Entity par7Entity)
     {
     	int direction = par1World.getBlockMetadata(par2, par3, par4);

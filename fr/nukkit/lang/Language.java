@@ -7,17 +7,33 @@ import java.util.Properties;
 
 import net.minecraft.src.StringTranslate;
 
+/**
+ * Nukkit lang loader class.
+ * @author Mathieu Bour (Dierka)
+ * @version 1.0
+ * @since 2.0R0.1
+ */
 public class Language
 {
 	private static Language instance = new Language();
 	
 	public Language() {}
 	
+	/**
+	 * Returns the instance of the class.
+	 * @return
+	 */
 	public static Language getInstance()
 	{
 		return instance;
 	}
 	
+	/**
+	 * Load the langage from the Nukkit langage files.
+	 * @param par1Properties
+	 * @param par2Str
+	 * @throws IOException
+	 */
 	public void loadLanguage(Properties par1Properties, String par2Str) throws IOException
 	{
 		try

@@ -7,6 +7,12 @@ import net.minecraft.src.Entity;
 import net.minecraft.src.Material;
 import net.minecraft.src.World;
 
+/**
+ * Nukkit table block class.
+ * @author Mathieu Bour (Dierka)
+ * @version 1.0
+ * @since 2.0R0.1
+ */
 public class BlockTable extends BlockFurnitureAbstract
 {
 	public BlockTable(int id, int textureIndex, Material material)
@@ -15,11 +21,13 @@ public class BlockTable extends BlockFurnitureAbstract
         this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 1.0F);
 	}
 
+	@Override
 	public int getRenderType()
 	{
 		return 71;
 	}
 	
+	@Override
     public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, List par6List, Entity par7Entity)
     {
 		this.setBlockBounds(0.4F, 0.0F, 0.4F, 0.6F, 0.9F, 0.6F);

@@ -7,6 +7,12 @@ import net.minecraft.src.BlockStairs;
 import net.minecraft.src.RenderBlocks;
 import net.minecraft.src.Tessellator;
 
+/**
+ * Nukkit chair rederer
+ * @author Mathieu Bour (Dierka)
+ * @version 1.0
+ * @since 2.0R0.1
+ */
 public class RenderChair extends RenderAbstract
 {
 	public RenderChair(RenderBlocks renderblocks)

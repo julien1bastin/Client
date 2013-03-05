@@ -6,6 +6,12 @@ import net.minecraft.src.Block;
 import net.minecraft.src.RenderBlocks;
 import net.minecraft.src.Tessellator;
 
+/**
+ * Nukkit bank rederer
+ * @author Mathieu Bour (Dierka)
+ * @version 1.0
+ * @since 2.0R0.1
+ */
 public class RenderBank extends RenderAbstract
 {
 
