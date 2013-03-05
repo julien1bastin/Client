@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+import fr.nukkit.recipes.CraftingRecipes;
+
 public class CraftingManager
 {
     /** The static instance of this class */
@@ -30,6 +32,9 @@ public class CraftingManager
         (new RecipesCrafting()).addRecipes(this);
         (new RecipesArmor()).addRecipes(this);
         (new RecipesDyes()).addRecipes(this);
+
+        (new CraftingRecipes()).addRecipes(this); // Nukkit - adding Nukkit recipes
+        
         this.recipes.add(new RecipesArmorDyes());
         this.recipes.add(new RecipesMapCloning());
         this.recipes.add(new RecipesMapExtending());
@@ -131,7 +136,7 @@ public class CraftingManager
         System.out.println(this.recipes.size() + " recipes");
     }
 
-    ShapedRecipes addRecipe(ItemStack par1ItemStack, Object ... par2ArrayOfObj)
+    public ShapedRecipes addRecipe(ItemStack par1ItemStack, Object ... par2ArrayOfObj) // Nukkit - default -> public
     {
         String var3 = "";
         int var4 = 0;
