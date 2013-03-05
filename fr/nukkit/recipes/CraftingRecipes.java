@@ -52,7 +52,7 @@ public class CraftingRecipes
 		par1CraftingManager.addRecipe(new ItemStack(Block.fenceWood, 6), new Object[] { "###", "###", '#', Block.wood });
 		par1CraftingManager.addRecipe(new ItemStack(Block.fenceSteel, 6), new Object[] { "###", "###", '#', Block.fenceIron });
 
-		par1CraftingManager.addRecipe(new ItemStack(Block.lantern, 6), new Object[] { "#", "X", '#', Block.redstoneRepeaterIdle, 'X', Block.glass });
+		par1CraftingManager.addRecipe(new ItemStack(Block.lantern, 6), new Object[] { "#", "X", '#', Block.redstoneLampIdle, 'X', Block.glass });
 		
 	}
 	
