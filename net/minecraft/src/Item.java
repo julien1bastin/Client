@@ -177,7 +177,36 @@ public class Item
     
     public static Item seedsMalt = (new ItemSeeds(700, 197, Block.tilledField.blockID)).setIconCoord(7, 12).setItemName("seeds");
     public static Item malt = (new Item(701)).setIconCoord(8, 12).setItemName("malt").setCreativeTab(CreativeTabs.tabMaterials);
-    
+    public static Item ingotObsidian = (new Item(1019)).setIconCoord(2, 9).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
+    public static Item ruby = (new Item(1019)).setIconCoord(10, 10).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
+    public static Item swordObsidian = (new ItemSword(1005, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 9).setItemName("swordObsidian");
+    public static Item shovelObsidian = (new ItemSpade(1006, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 10).setItemName("shovelObsidian");
+    public static Item pickaxeObsidian = (new ItemPickaxe(1007, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 11).setItemName("pickaxeObsidian");
+    public static Item axeObsidian = (new ItemAxe(1008, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 12).setItemName("hatchetObsidian");
+    public static Item hoeObsidian = (new ItemHoe(1009, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 13).setItemName("hoeObsidian");
+    public static Item helmetObsidian = (new ItemArmor(1001, EnumArmorMaterial.OBSIDIAN, 5, 0)).setIconCoord(2, 10).setItemName("helmetObsidian");
+    public static Item plateObsidian = (new ItemArmor(1002, EnumArmorMaterial.OBSIDIAN, 5, 1)).setIconCoord(2, 11).setItemName("chestplateObsidian");
+	public static Item legsObsidian = (new ItemArmor(1003, EnumArmorMaterial.OBSIDIAN, 5, 2)).setIconCoord(2, 12).setItemName("leggingsObsidian");
+	public static Item bootsObsidian = (new ItemArmor(1004, EnumArmorMaterial.OBSIDIAN, 5, 3)).setIconCoord(2, 13).setItemName("bootsObsidian");
+	public static Item swordEmerald = (new ItemSword(1014, EnumToolMaterial.EMERALD)).setIconCoord(3, 9).setItemName("swordEmerald");
+	public static Item shovelEmerald = (new ItemSpade(1015, EnumToolMaterial.EMERALD)).setIconCoord(3, 10).setItemName("shovelEmerald");
+	public static Item pickaxeEmerald = (new ItemPickaxe(1016, EnumToolMaterial.EMERALD)).setIconCoord(3, 11).setItemName("pickaxeEmerald");
+	public static Item axeEmerald = (new ItemAxe(1017, EnumToolMaterial.EMERALD)).setIconCoord(3, 12).setItemName("hatchetEmerald");
+	public static Item hoeEmerald = (new ItemHoe(1018, EnumToolMaterial.EMERALD)).setIconCoord(3, 13).setItemName("hoeEmerald");
+	public static Item helmetEmerald = (new ItemArmor(1010, EnumArmorMaterial.EMERALD, 6, 0)).setIconCoord(4, 10).setItemName("helmetEmerald");
+	public static Item plateEmerald = (new ItemArmor(1011, EnumArmorMaterial.EMERALD, 6, 1)).setIconCoord(4, 11).setItemName("chestplateEmerald");
+	public static Item legsEmerald = (new ItemArmor(1012, EnumArmorMaterial.EMERALD, 6, 2)).setIconCoord(4, 12).setItemName("leggingsEmerald");
+	public static Item bootsEmerald = (new ItemArmor(1013, EnumArmorMaterial.EMERALD, 6, 3)).setIconCoord(4, 13).setItemName("bootsEmerald");
+	public static Item swordRuby = (new ItemSword(1024, EnumToolMaterial.RUBY)).setIconCoord(5, 9).setItemName("swordRuby");
+	public static Item shovelRuby = (new ItemSpade(1025, EnumToolMaterial.RUBY)).setIconCoord(5, 10).setItemName("shovelRuby");
+	public static Item pickaxeRuby = (new ItemPickaxe(1026, EnumToolMaterial.RUBY)).setIconCoord(5, 11).setItemName("pickaxeRuby");
+	public static Item axeRuby = (new ItemAxe(1027, EnumToolMaterial.RUBY)).setIconCoord(5, 12).setItemName("hatchetRuby");
+	public static Item hoeRuby = (new ItemHoe(1028, EnumToolMaterial.RUBY)).setIconCoord(5, 13).setItemName("hoeRuby");
+	public static Item helmetRuby = (new ItemArmor(1020, EnumArmorMaterial.RUBY, 7, 0)).setIconCoord(6, 10).setItemName("helmetRuby");
+	public static Item plateRuby = (new ItemArmor(1021, EnumArmorMaterial.RUBY, 7, 1)).setIconCoord(6, 11).setItemName("chestplateRuby");
+	public static Item legsRuby = (new ItemArmor(1022, EnumArmorMaterial.RUBY, 7, 2)).setIconCoord(6, 12).setItemName("leggingsRuby");
+	public static Item bootsRuby = (new ItemArmor(1023, EnumArmorMaterial.RUBY, 7, 3)).setIconCoord(6, 13).setItemName("bootsRuby");
+	
     // Nukkit end
     
     public static Item record13 = (new ItemRecord(2000, "13")).setIconCoord(0, 15).setItemName("record");
