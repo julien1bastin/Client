@@ -13,8 +13,6 @@ public enum EnumToolMaterial
 	EMERALD(3, 3122, 6.0F, 3, 10),
 	RUBY(3, 780, 8.0F, 9, 10);
     // Nukkit end
-    
-    
 
     /**
      * The level of material this tool can harvest (3 = DIAMOND, 2 = IRON, 1 = STONE, 0 = IRON/GOLD)
