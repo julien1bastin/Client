@@ -26,8 +26,8 @@ Changelog
     * + Dalle en terre
     * + Bloc de paille
     * + Meubles : chaise, table, banc
-    * + BarriÃ¨re en fer
-    * + BarriÃ¨re en bois
+    * + Barrière en fer
+    * + Barrière en bois
     * + Lanterne
     * + Bière et houblon
     * + Minerai et bloc de rubis
