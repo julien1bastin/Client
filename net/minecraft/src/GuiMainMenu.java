@@ -14,6 +14,8 @@ import net.minecraft.client.Minecraft;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.util.glu.GLU;
 
+import fr.nukkit.core.Nukkit;
+
 public class GuiMainMenu extends GuiScreen
 {
     /** The RNG used by the Main Menu Screen. */
@@ -490,7 +492,7 @@ public class GuiMainMenu extends GuiScreen
         this.drawCenteredString(this.fontRenderer, this.splashText, 0, -8, 16776960);
         GL11.glPopMatrix();
         // Nukkit start - edit GuiMainMenu
-        String var9 = "\u00a7cNukkit 2.0R0.1\u00a7r based on Minecraft 1.4.7";
+        String var9 = "\u00a7cNukkit " + Nukkit.NUKKIT_VERSION + "\u00a7r based on Minecraft 1.4.7";
         this.drawString(this.fontRenderer, "Nukkit : http://nukkit-project.fr/", 2, 2, 16777215); // Nukkit - Adding nukkit label
         // Nukkit end
         
