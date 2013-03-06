@@ -246,9 +246,9 @@ public class Block
     public static final Block chair = (new BlockChair(191, 4, Material.wood)).setBlockName("chair").setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block bank = (new BlockBank(192, 4, Material.wood)).setBlockName("bank").setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block table = (new BlockTable(193, 4, Material.wood)).setBlockName("table").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block fenceWood = (new BlockFence(194, 20)).setBlockName("fenceWood").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block fenceSteel = (new BlockFence(195, 22)).setBlockName("fenceSteel").setCreativeTab(CreativeTabs.tabDecorations);
-    public static final Block lantern = (new Block(196, 236, Material.glass)).setBlockName("lantern").setLightValue(1.0F).setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block fenceWood = (new BlockFence(194, 20)).setHardness(2.0F).setBlockName("fenceWood").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block fenceSteel = (new BlockFence(195, 22)).setHardness(5.0F).setResistance(10.0F).setBlockName("fenceSteel").setCreativeTab(CreativeTabs.tabDecorations);
+    public static final Block lantern = (new Block(196, 236, Material.glass)).setHardness(0.3F).setStepSound(soundGlassFootstep).setBlockName("lantern").setLightValue(1.0F).setCreativeTab(CreativeTabs.tabDecorations);
     public static final Block cropsMalt = (new BlockCropsMalt(197, 217)).setBlockName("cropsMalt");
     
     public static final Block oreRuby = (new fr.nukkit.blocks.BlockOre(198, 187)).setHardness(3.0F).setResistance(5.0F).setBlockName("oreRuby");

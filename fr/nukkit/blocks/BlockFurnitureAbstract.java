@@ -15,6 +15,8 @@ public abstract class BlockFurnitureAbstract extends Block
 	{
 		super(id, textureIndex, material);
 		this.setStepSound(Block.soundWoodFootstep);
+		this.setHardness(2.0F);
+		this.setResistance(5.0F);
 	}
 
 	@Override
