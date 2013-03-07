@@ -1,6 +1,7 @@
 package fr.nukkit.blocks;
 
 import net.minecraft.src.Block;
+import net.minecraft.src.IBlockAccess;
 import net.minecraft.src.Material;
 
 /**
@@ -30,4 +31,10 @@ public abstract class BlockFurnitureAbstract extends Block
 	{
 		return false;
 	}
+	
+	@Override
+    public boolean shouldSideBeRendered(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5)
+    {
+        return true;
+    }
 }
