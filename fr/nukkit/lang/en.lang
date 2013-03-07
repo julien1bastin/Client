@@ -1,6 +1,6 @@
 # Nukkit language file
 # Copyright Nukkit, 2013
-
+tile.stairsDirt.name=Dirt Stairs
 tile.stairsWoolWhite.name=White Wool Stairs
 tile.stairsWoolOrange.name=Orange Wool Stairs
 tile.stairsWoolMagenta.name=Magenta Wool Stairs
