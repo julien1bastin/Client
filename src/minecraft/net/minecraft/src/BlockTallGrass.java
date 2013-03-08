@@ -50,7 +50,8 @@ public class BlockTallGrass extends BlockFlower
      */
     public int idDropped(int par1, Random par2Random, int par3)
     {
-        return par2Random.nextInt(8) == 0 ? Item.seeds.itemID : -1;
+    	int rand = par2Random.nextInt(8);
+        return rand == 0 ? Item.seeds.itemID : rand == 1 ? Item.seedsMalt.itemID : -1; // Nukkit - adding drop for malt
     }
 
     /**
