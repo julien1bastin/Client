@@ -255,7 +255,6 @@ public class Block
     
     // Nukkit end
     
-    
     /**
      * The index of the texture to be displayed for this block. May vary based on graphics settings. Mostly seems to
      * come from terrain.png, and the index is 0-based (grass is 0).
