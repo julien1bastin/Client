@@ -177,7 +177,7 @@ public class Item
     
     public static Item seedsMalt = (new ItemSeeds(700, 197, Block.tilledField.blockID)).setIconCoord(7, 12).setItemName("seedsMalt");
     public static Item malt = (new Item(701)).setIconCoord(8, 12).setItemName("malt").setCreativeTab(CreativeTabs.tabMaterials);
-    public static Item ingotObsidian = (new Item(702)).setIconCoord(2, 9).setItemName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
+    public static Item ingotObsidian = (new Item(702)).setIconCoord(2, 9).setItemName("ingotObsidian").setCreativeTab(CreativeTabs.tabMaterials);
     public static Item swordObsidian = (new ItemSword(703, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 9).setItemName("swordObsidian");
     public static Item shovelObsidian = (new ItemSpade(704, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 10).setItemName("shovelObsidian");
     public static Item pickaxeObsidian = (new ItemPickaxe(705, EnumToolMaterial.OBSIDIAN)).setIconCoord(1, 11).setItemName("pickaxeObsidian");
